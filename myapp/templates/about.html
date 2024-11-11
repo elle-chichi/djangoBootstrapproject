@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+<title>Pastry Palace| About</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="{% static 'css/ie8.css' %}"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="{% static 'css/ie7.css' %}"><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="{% static 'css/ie6.css' %}"><![endif]-->
+</head>
+<body>
+<div id="header">
+  <div>
+    <div>
+      <div id="logo"> <a href="#"><img src="{% static 'images/logo.gif' %}" alt=""></a> </div>
+      <div>
+        <div> <a href="signup.html">My Account</a> <a href="#">Help</a> <a href="signin.html" class="last">Sign in</a> </div>
+        <form action="#">
+          <input type="text" id="search" maxlength="30">
+          <input type="submit" value="" id="searchbtn">
+        </form>
+      </div>
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{%url 'product'%}">The Pastry shop</a></li>
+      <li class="current"><a href="{% url 'about' %}">About us</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'blog' %}">Blog</a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    <div class="section"> <a href="#"><img src="{% static 'images/wedding-cupcakes-small.jpg' %}" alt=""></a> </div>
+  </div>
+</div>
+<div id="content">
+  <div id="about">
+    <div class="aside">
+      <h1>About Pastry Palace</h1>
+      <span>Welcome to Pastry Palace,</span>
+      <p>where history and haute pâtisserie converge to create an unparalleled dessert experience. Nestled in the heart of Nairobi, Pastry Palace stands as a testament to culinary excellence and a rich legacy that dates back to the early 1990s.</p>
+      <span>Our story began in a quaint little bakery, </span>
+      <p>For over a century, Pastry Palace has been synonymous with opulence and craftsmanship. Each creation is a masterpiece, meticulously crafted using time-honored techniques and the finest ingredients.</p>
+      <span>Where the Pastry Royals first  </span>
+      <p>whisked together flour, butter, and dreams, laying the foundation for what would become a beacon of fine pastries. Our Pastry Royals are true artists, blending innovation with tradition to present desserts that are as visually stunning as they are delicious. From our renowned croissants, which have been perfected over generations, to our modern interpretations of classic confections, every bite is a journey through our storied past.</p>
+      <span>Stepping into Pastry Palace</span>
+        <p>is like entering a world where elegance meets indulgence. The ambiance is a harmonious blend of classic charm and contemporary sophistication, inviting you to savor the finer things in life. Our menu features an exquisite array of pastries, cakes, and specialty desserts, each one telling a unique story of flavor and finesse. Whether you are celebrating a special occasion or simply indulging in a moment of decadence, Pastry Palace promises an experience that delights all your senses.</p>
+    </div>
+    <div class="section">
+      <div id="visitshop">
+        <div>
+          <p><span>Sweets from the heart</span> Treat your loved ones</p>
+          <a href="#" class="visit">visit the shop</a> </div>
+      </div>
+      <div>
+        <h3>Please read</h3>
+        <p>We invite you to join us at Pastry Palace and become a part of our enduring legacy. Whether you are a long-time patron or a first-time visitor, we welcome you to experience the magic that has enchanted generations. Come, savor the legacy, and create sweet memories with us at Pastry Palace.</p>
+      </div>
+      <div>
+        <h3>Address</h3>
+        <p>18th Floor, Intercontinental House <br>
+          Council Bldg., Possum Avenue <br>
+          Karousel St., Business Park <br>
+          Ottawa, Ontario, 6029 <br>
+          Yummy Lane</p>
+      </div>
+      <div> <a href="#" class="callus">CALL US <span>+254-733-181-213</span></a> </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="section">
+    <div>
+      <div class="aside">
+        <div>
+          <div> <b>Too <span>BUSY</span> to shop?</b> <a href="signin.html">Sign up for free</a>
+            <p>and we'll deliver it on your doorstep</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect"> <span>Follow Us</span>
+        <ul>
+          <li><a href="#" class="facebook">Facebook</a></li>
+          <li><a href="#" class="twitter">Twitter</a></li>
+          <li><a href="#" class="subscribe">Subscribe</a></li>
+{#          <li><a href="#" class="flicker">Flicker</a></li>#}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="featured">
+    <ul>
+      <li class="first"> <a href="#"><img src="{% static 'images/fruit-cake.jpg' %}" alt=""></a>
+        <h2><a href="#">Tips on how to preserve</a></h2>
+        <p>To keep your cakes fresh and delicious, store them in an airtight container at room temperature, away from direct sunlight. For longer preservation, refrigerate the cake, especially if it has perishable fillings or frostings, and bring it to room temperature before serving for optimal flavor. If you need to store the cake for an extended period, wrap it tightly in plastic wrap, place it in an airtight container, and freeze it, ensuring it remains moist and flavorful when thawed. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/italian.jpg' %}" alt=""></a>
+        <h2><a href="#">Menu of the day: Italian</a></h2>
+        <p>Indulge in the exquisite taste of our Tiramisu, a timeless Italian dessert layered with espresso-soaked ladyfingers and creamy mascarpone cheese, perfectly dusted with cocoa. Each bite offers a harmonious blend of rich flavors and velvety textures, making it the ultimate treat for any occasion. Visit us at Pastry Palace to savor this classic delight and experience a slice of Italy in every mouthful. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/fruit.jpg' %}" alt=""></a>
+        <h2><a href="#">Fruit menu for your diet</a></h2>
+        <p>Discover our delightful Fruit Menu at Pastry Palace, featuring an array of fresh and vibrant fruit-infused pastries perfect for your diet. Indulge in guilt-free treats like our luscious berry tarts, tropical fruit parfaits, and zesty citrus cakes, all made with the finest seasonal fruits. Visit us today to enjoy a healthier way to satisfy your sweet tooth with our nutritious and delicious fruit creations! 🍓🍊🍍 <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/desserts.jpg' %}" alt=""></a>
+        <h2><a href="#">Desserts for every occasion</a></h2>
+        <p>At Pastry Palace, we offer a delectable selection of desserts crafted to add sweetness to every occasion. From elegant wedding cakes and festive holiday treats to delightful birthday pastries and everyday indulgences, our creations are designed to make every moment special. Visit us to find the perfect dessert that complements your celebration, adding a touch of sweetness to life's most memorable moments. 🎂✨ <a href="#" class="readmore">read more</a></p>
+      </li>
+    </ul>
+  </div>
+  <div id="navigation">
+    <div>
+      <ul>
+        <li class="first"><a href="#">help</a></li>
+        <li><a href="#">about Pastry Palace</a></li>
+        <li><a href="#">Pastry Palace talk</a></li>
+        <li><a href="#">developers</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms of use</a></li>
+      </ul>
+      <p>Copyright &copy; 2024 <a href="#">Pastry Palace</a> All rights reserved | Website Template By <a target="_blank" href="http://www.freewebsitetemplates.com/">Michelle Chichi designs.com</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

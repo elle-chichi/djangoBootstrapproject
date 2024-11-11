@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    
+<title>Cake Delights | Product</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css"><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css"><![endif]-->
+</head>
+<body>
+<div id="header">
+  <div>
+    <div>
+      <div id="logo"> <a href="#"><img src="{% static 'images/logo.gif' %}" alt=""></a> </div>
+      <div>
+        <div> <a href="signup.html">My Account</a> <a href="#">Help</a> <a href="signin.html" class="last">Sign in</a> </div>
+        <form action="#">
+          <input type="text" id="search" maxlength="30">
+          <input type="submit" value="" id="searchbtn">
+        </form>
+      </div>
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li class="current"><a href="{% url 'product' %}">The Pastry shop</a></li>
+      <li><a href="{% url 'about' %}">About us</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'blog' %}">Blog</a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    <div class="section"> <a href="#"><img src="{% static 'images/wedding-cupcakes-small.jpg' %}" alt=""></a> </div>
+  </div>
+</div>
+<div id="content">
+  <div>
+    <h1>The Pastry shop</h1>
+    <ul>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Special Treats</a></h2>
+            <p>At Pastry Palace, we believe that every moment deserves a little extra sweetness. Our special treats are designed to make your occasions even more memorable. From exquisite confections to beautifully crafted desserts, our unique creations are perfect for celebrating life’s special moments.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/special-treats.jpg' %}" alt=""></a> </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Tarts</a></h2>
+            <p>At Pastry Palace, our tarts are crafted to perfection, combining the finest ingredients with a touch of artistry. Each tart is a delightful symphony of flavors and textures, designed to tantalize your taste buds and leave you craving for more.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/tarts.jpg' %}" alt=""></a> </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Cakes</a></h2>
+            <p>At Pastry Palace, we create cakes that are not just desserts, but experiences. Each cake is a work of art, crafted with passion and precision to celebrate the special moments in your life.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/cakes.jpg' %}" alt=""></a> </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Desserts</a></h2>
+            <p>At Pastry Palace, we offer a tantalizing selection of desserts, each one crafted to perfection to satisfy your sweet cravings. From timeless classics to innovative creations, our desserts are designed to delight and surprise.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/dessert.jpg' %}" alt=""></a> </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Pastries</a></h2>
+            <p>At Pastry Palace, we create an irresistible array of pastries, each baked to perfection with love and tradition. Our pastries are the perfect blend of flaky, buttery goodness and rich, indulgent flavors, designed to delight your senses.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/pastries.jpg' %}" alt=""></a> </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            <h2><a href="#">Healthy Food</a></h2>
+            <p>At Pastry Palace, we believe that delicious treats can also be good for you. Our Healthy Chocolate Muffins are the perfect example of how you can indulge your chocolate cravings without compromising on health.</p>
+            <a href="#" class="view">view all</a> </div>
+          <a href="#"><img src="{% static 'images/healthy-food.jpg' %}" alt=""></a> </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="footer">
+  <div class="section">
+    <div>
+      <div class="aside">
+        <div>
+          <div> <b>Too <span>BUSY</span> to shop?</b> <a href="signin.html">Sign up for free</a>
+            <p>and we'll deliver it on your doorstep</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect"> <span>Follow Us</span>
+        <ul>
+          <li><a href="#" class="facebook">Facebook</a></li>
+          <li><a href="#" class="twitter">Twitter</a></li>
+          <li><a href="#" class="subscribe">Subscribe</a></li>
+{#          <li><a href="#" class="flicker">Flicker</a></li>#}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="featured">
+    <ul>
+      <li class="first"> <a href="#"><img src="{% static 'images/fruit-cake.jpg' %}" alt=""></a>
+        <h2><a href="#">Tips on how to preserve</a></h2>
+        <p>To keep your cakes fresh and delicious, store them in an airtight container at room temperature, away from direct sunlight. For longer preservation, refrigerate the cake, especially if it has perishable fillings or frostings, and bring it to room temperature before serving for optimal flavor. If you need to store the cake for an extended period, wrap it tightly in plastic wrap, place it in an airtight container, and freeze it, ensuring it remains moist and flavorful when thawed. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/italian.jpg' %}" alt=""></a>
+        <h2><a href="#">Menu of the day: Italian</a></h2>
+        <p>Indulge in the exquisite taste of our Tiramisu, a timeless Italian dessert layered with espresso-soaked ladyfingers and creamy mascarpone cheese, perfectly dusted with cocoa. Each bite offers a harmonious blend of rich flavors and velvety textures, making it the ultimate treat for any occasion. Visit us at Pastry Palace to savor this classic delight and experience a slice of Italy in every mouthful. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/fruit.jpg' %}" alt=""></a>
+        <h2><a href="#">Fruit menu for your diet</a></h2>
+        <p>Discover our delightful Fruit Menu at Pastry Palace, featuring an array of fresh and vibrant fruit-infused pastries perfect for your diet. Indulge in guilt-free treats like our luscious berry tarts, tropical fruit parfaits, and zesty citrus cakes, all made with the finest seasonal fruits. Visit us today to enjoy a healthier way to satisfy your sweet tooth with our nutritious and delicious fruit creations! 🍓🍊🍍<a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/desserts.jpg' %}" alt=""></a>
+        <h2><a href="#">Desserts for every occasion</a></h2>
+        <p>At Pastry Palace, we offer a delectable selection of desserts crafted to add sweetness to every occasion. From elegant wedding cakes and festive holiday treats to delightful birthday pastries and everyday indulgences, our creations are designed to make every moment special. Visit us to find the perfect dessert that complements your celebration, adding a touch of sweetness to life's most memorable moments. 🎂✨ <a href="#" class="readmore">read more</a></p>
+      </li>
+    </ul>
+  </div>
+  <div id="navigation">
+    <div>
+      <ul>
+        <li class="first"><a href="#">help</a></li>
+        <li><a href="#">about cake delight</a></li>
+        <li><a href="#">cake delight talk</a></li>
+        <li><a href="#">developers</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms of use</a></li>
+      </ul>
+      <p>Copyright &copy; 2024 <a href="#">Pastry Palace</a> All rights reserved | Website Template By <a target="_blank" href="http://www.freewebsitetemplates.com/">Michelle Chichi designs</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

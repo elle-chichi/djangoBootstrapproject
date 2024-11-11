@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+<title>Cake Delights | Blog</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="{% static 'css/ie8.css' %}"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="{% static 'css/ie7.css' %}"><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="{% static 'css/ie6.css' %}"><![endif]-->
+</head>
+<body>
+<div id="header">
+  <div>
+    <div>
+      <div id="logo"> <a href="#"><img src="{% static 'images/logo.gif' %}" alt=""></a> </div>
+      <div>
+        <div> <a href="signup.html">My Account</a> <a href="#">Help</a> <a href="{% url 'signin' %}" class="last">Sign in</a> </div>
+        <form action="#">
+          <input type="text" id="search" maxlength="30">
+          <input type="submit" value="" id="searchbtn">
+        </form>
+      </div>
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'product' %}">The Pastry shop</a></li>
+      <li><a href="{% url 'about' %}">About us</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li class="current"><a href="{% url 'blog' %}">Blog</a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    <div class="section"> <a href="#"><img src="{% static 'images/wedding-cupcakes-small.jpg' %}" alt=""></a> </div>
+  </div>
+</div>
+<div id="content">
+  <div id="blog">
+    <div id="articles">
+      <ul>
+        <li>
+          <div>
+            <div> <span class="date">Dec 3</span> <span class="connect"> <a href="#" class="twitter">Twitter</a> <a href="#" class="heart">Heart</a> <a href="#" class="facebook">Facebook</a> </span>
+              <h1><a href="#">New Recipes: Fancy Desserts</a></h1>
+              <h2>Let's bake!</h2>
+              <p>Welcome to our "Let's Bake" blog series at Pastry Palace! This is where we share our passion for baking and invite you to join us on a delightful culinary journey. Whether you’re a seasoned baker or just starting out, we have tips, tricks, and recipes that cater to all skill levels. Discover the secrets behind our signature pastries, learn how to perfect your favorite treats, and get inspired by seasonal baking ideas. Each blog post is crafted to provide you with step-by-step guidance, ensuring your baking adventures are successful and enjoyable. From mastering the art of the perfect croissant to creating stunning celebration cakes, we cover it all. Join our community of baking enthusiasts and let’s create something sweet together. Stay tuned for our latest posts, and happy baking from all of us at Pastry Palace!</p>
+              <span id="tag">Tag: <a href="#">Cookies</a> <a href="#">Recipes</a></span> </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div> <span class="date">Nov 29</span> <span class="connect"> <a href="#" class="twitter">Twitter</a> <a href="#" class="heart">Heart</a> <a href="#" class="facebook">Facebook</a> </span>
+              <h1><a href="#">3 Day Christmas Sale on the Shop</a></h1>
+              <h2>December 3-5&#44; 2024 Crazy Discounts</h2>
+              <p>Ho ho ho! 🎅 The holiday season is here, and Pastry Palace is celebrating with a festive 3-Day Christmas Sale! From December 22nd to 24th, enjoy irresistible discounts on our wide array of holiday treats and pastries. Whether you're planning a cozy family gathering or looking for the perfect gift, our specially crafted Christmas goodies are sure to delight. Indulge in our delectable Yule logs, festive cookies, and beautifully decorated holiday cakes, all available at special prices. Don’t miss out on this opportunity to add a touch of sweetness to your holiday celebrations. Visit our shop or order online to take advantage of these exclusive offers. Happy Holidays from all of us at Pastry Palace! 🎄✨</p>
+              <span id="tag">Tag: <a href="#">Sale</a> <a href="#">Promos</a> <a href="#">Food</a></span> </div>
+          </div>
+        </li>
+      </ul>
+      <div class="section"> <a href="#" class="newpost">New Post</a> <a href="#" class="oldpost">Old Post</a> </div>
+    </div>
+    <div id="sidebar">
+      <h2>Archives</h2>
+      <h3 class="first"><a href="#">2011 <span>(60)</span></a></h3>
+      <div>
+        <p><a href="#">November <span>(11)</span></a></p>
+        <p><a href="#">October <span>(3)</span></a></p>
+        <p><a href="#">September <span>(8)</span></a></p>
+        <p><a href="#">August <span>(3)</span></a></p>
+        <p><a href="#">July <span>(2)</span></a></p>
+        <p><a href="#">June</a></p>
+        <p><a href="#">May <span>(8)</span></a></p>
+        <p><a href="#">April <span>(7)</span></a></p>
+        <p><a href="#">March <span>(7)</span></a></p>
+        <p><a href="#">April <span>(7)</span></a></p>
+        <p><a href="#">February <span>(10)</span></a></p>
+        <p><a href="#">January <span>(1)</span></a></p>
+      </div>
+      <h3><a href="#">2010</a></h3>
+      <h3><a href="#">2009</a></h3>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="section">
+    <div>
+      <div class="aside">
+        <div>
+          <div> <b>Too <span>BUSY</span> to shop?</b> <a href="signin.html">Sign up for free</a>
+            <p>and we'll deliver it on your doorstep</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect"> <span>Follow Us</span>
+        <ul>
+          <li><a href="#" class="facebook">Facebook</a></li>
+          <li><a href="#" class="twitter">Twitter</a></li>
+          <li><a href="#" class="subscribe">Subscribe</a></li>
+{#          <li><a href="#" class="flicker">Flicker</a></li>#}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="featured">
+    <ul>
+      <li class="first"> <a href="#"><img src="{% static 'images/fruit-cake.jpg' %}" alt=""></a>
+        <h2><a href="#">Tips on how to preserve</a></h2>
+        <p>To keep your cakes fresh and delicious, store them in an airtight container at room temperature, away from direct sunlight. For longer preservation, refrigerate the cake, especially if it has perishable fillings or frostings, and bring it to room temperature before serving for optimal flavor. If you need to store the cake for an extended period, wrap it tightly in plastic wrap, place it in an airtight container, and freeze it, ensuring it remains moist and flavorful when thawed. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/italian.jpg' %}" alt=""></a>
+        <h2><a href="#">Menu of the day: Italian</a></h2>
+        <p>Indulge in the exquisite taste of our Tiramisu, a timeless Italian dessert layered with espresso-soaked ladyfingers and creamy mascarpone cheese, perfectly dusted with cocoa. Each bite offers a harmonious blend of rich flavors and velvety textures, making it the ultimate treat for any occasion. Visit us at Pastry Palace to savor this classic delight and experience a slice of Italy in every mouthful. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/fruit.jpg' %}" alt=""></a>
+        <h2><a href="#">Fruit menu for your diet</a></h2>
+        <p>Discover our delightful Fruit Menu at Pastry Palace, featuring an array of fresh and vibrant fruit-infused pastries perfect for your diet. Indulge in guilt-free treats like our luscious berry tarts, tropical fruit parfaits, and zesty citrus cakes, all made with the finest seasonal fruits. Visit us today to enjoy a healthier way to satisfy your sweet tooth with our nutritious and delicious fruit creations! 🍓🍊🍍 <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/desserts.jpg' %}" alt=""></a>
+        <h2><a href="#">Desserts for every occasion</a></h2>
+        <p>At Pastry Palace, we offer a delectable selection of desserts crafted to add sweetness to every occasion. From elegant wedding cakes and festive holiday treats to delightful birthday pastries and everyday indulgences, our creations are designed to make every moment special. Visit us to find the perfect dessert that complements your celebration, adding a touch of sweetness to life's most memorable moments. 🎂✨<a href="#" class="readmore">read more</a></p>
+      </li>
+    </ul>
+  </div>
+  <div id="navigation">
+    <div>
+      <ul>
+        <li class="first"><a href="#">help</a></li>
+        <li><a href="#">about Pastry Palace</a></li>
+        <li><a href="#">Pastry Palace talk</a></li>
+        <li><a href="#">developers</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms of use</a></li>
+      </ul>
+      <p>Copyright &copy; 2024 <a href="#">Pastry Palace</a> All rights reserved | Website Template By <a target="_blank" href="http://www.freewebsitetemplates.com/">Michelle Chichi designs.com</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

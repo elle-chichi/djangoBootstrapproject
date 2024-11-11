@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+<title>Pastry Palace| Services</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="{% static 'css/ie8.css' %}"><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="{% static 'css/ie7.css' %}"><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="{% static 'css/ie6.css' %}"><![endif]-->
+</head>
+<body>
+<div id="header">
+  <div>
+    <div>
+      <div id="logo"> <a href="#"><img src="{% static 'images/logo.gif' %}" alt=""></a> </div>
+      <div>
+        <div> <a href="signup.html">My Account</a> <a href="#">Help</a> <a href="signin.html" class="last">Sign in</a> </div>
+        <form action="#">
+          <input type="text" id="search" maxlength="30">
+          <input type="submit" value="" id="searchbtn">
+        </form>
+      </div>
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'product' %}">The Pastry shop</a></li>
+      <li><a href="{% url 'about' %}">About us</a></li>
+      <li class="current"><a href="{% url 'services' %}">Services</a></li>
+      <li><a href="{% url 'blog' %}">Blog</a></li>
+      <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+    <div class="section"> <a href="#"><img src="{% static 'images/wedding-cupcakes-small.jpg' %}" alt=""></a> </div>
+  </div>
+</div>
+<div id="content">
+  <div id="services">
+    <div class="aside">
+      <h1>Our Services</h1>
+      <span>Catering</span>
+      <p>Elevate your events with our exceptional catering services, offering a delightful array of pastries, cakes, and desserts tailored to your needs. Whether it’s a wedding, corporate event, or an intimate gathering, our bespoke catering ensures that every occasion is sweetly unforgettable. Contact us to customize your menu and bring the magic of Pastry Palace to your next celebration. 🍰✨</p>
+      <span>Bulk Orders</span>
+      <p>Planning a large event or need a substantial quantity of our delightful pastries? Our bulk order service is perfect for weddings, corporate events, and parties, ensuring that all your guests can enjoy our delicious creations. Contact us today to customize your order and make your event even sweeter with Pastry Palace. 🍰✨</p>
+      <span>Custom made cakes</span>
+      <p>Bring your vision to life with our bespoke custom-made cakes, perfect for any special occasion. Whether it’s a birthday, wedding, or any celebration, our skilled pastry chefs work closely with you to design a cake that reflects your unique style and taste. Contact us today to start creating your one-of-a-kind masterpiece that will leave a lasting impression on your guests. 🎂✨</p>
+    </div>
+    <div class="section">
+      <h3>Corporate Gifting</h3>
+      <p>Elevate your corporate gifting with the exquisite offerings from Our bespoke pastry boxes and artisanal treats are the perfect way to show appreciation to your clients, employees, and partners. Each gift is meticulously handcrafted to ensure top-notch quality and presentation, making a lasting impression.</p>
+      <p>We offer a variety of customizable options, from elegant assortments of our finest pastries to personalized cakes and confections. Our corporate gifting service includes beautifully packaged boxes, branded with your company logo for a personal touch. Whether it's for holidays, special milestones, or client appreciation, our gifts are designed to leave a sweet memory. Let us help you strengthen your business relationships with a touch of sweetness. Our team is dedicated to working with you to create the perfect gifts that reflect your brand and values. Contact us today to learn more about our corporate gifting options and make your next corporate event truly memorable with Pastry Palace.</p>
+      <div id="visitshop">
+        <div>
+          <p><span>Sweets from the heart</span> Treat your loveones</p>
+          <a href="#" class="visit">visit the shop</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="section">
+    <div>
+      <div class="aside">
+        <div>
+          <div> <b>Too <span>BUSY</span> to shop?</b> <a href="signin.html">Sign up for free</a>
+            <p>and we'll deliver it on your doorstep</p>
+          </div>
+        </div>
+      </div>
+      <div class="connect"> <span>Follow Us</span>
+        <ul>
+          <li><a href="#" class="facebook">Facebook</a></li>
+          <li><a href="#" class="twitter">Twitter</a></li>
+          <li><a href="#" class="subscribe">Subscribe</a></li>
+{#          <li><a href="#" class="flicker">Flicker</a></li>#}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="featured">
+    <ul>
+      <li class="first"> <a href="#"><img src="{% static 'images/fruit-cake.jpg' %}" alt=""></a>
+        <h2><a href="#">Tips on how to preserve</a></h2>
+        <p>To keep your cakes fresh and delicious, store them in an airtight container at room temperature, away from direct sunlight. For longer preservation, refrigerate the cake, especially if it has perishable fillings or frostings, and bring it to room temperature before serving for optimal flavor. If you need to store the cake for an extended period, wrap it tightly in plastic wrap, place it in an airtight container, and freeze it, ensuring it remains moist and flavorful when thawed. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/italian.jpg' %}" alt=""></a>
+        <h2><a href="#">Menu of the day: Italian</a></h2>
+        <p>Indulge in the exquisite taste of our Tiramisu, a timeless Italian dessert layered with espresso-soaked ladyfingers and creamy mascarpone cheese, perfectly dusted with cocoa. Each bite offers a harmonious blend of rich flavors and velvety textures, making it the ultimate treat for any occasion. Visit us at Pastry Palace to savor this classic delight and experience a slice of Italy in every mouthful. <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/fruit.jpg' %}" alt=""></a>
+        <h2><a href="#">Fruit menu for your diet</a></h2>
+        <p>Discover our delightful Fruit Menu at Pastry Palace, featuring an array of fresh and vibrant fruit-infused pastries perfect for your diet. Indulge in guilt-free treats like our luscious berry tarts, tropical fruit parfaits, and zesty citrus cakes, all made with the finest seasonal fruits. Visit us today to enjoy a healthier way to satisfy your sweet tooth with our nutritious and delicious fruit creations! 🍓🍊🍍 <a href="#" class="readmore">read more</a></p>
+      </li>
+      <li> <a href="#"><img src="{% static 'images/desserts.jpg' %}" alt=""></a>
+        <h2><a href="#">Desserts for every occasion</a></h2>
+        <p>At Pastry Palace, we offer a delectable selection of desserts crafted to add sweetness to every occasion. From elegant wedding cakes and festive holiday treats to delightful birthday pastries and everyday indulgences, our creations are designed to make every moment special. Visit us to find the perfect dessert that complements your celebration, adding a touch of sweetness to life's most memorable moments. 🎂✨ <a href="#" class="readmore">read more</a></p>
+      </li>
+    </ul>
+  </div>
+  <div id="navigation">
+    <div>
+      <ul>
+        <li class="first"><a href="#">help</a></li>
+        <li><a href="#">about Pastry Palace</a></li>
+        <li><a href="#">Pastry Palace talk</a></li>
+        <li><a href="#">developers</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">terms of use</a></li>
+      </ul>
+      <p>Copyright &copy; 2024 <a href="#">Pastry Palace</a> All rights reserved | Website Template By <a target="_blank" href="http://www.freewebsitetemplates.com/">Michelle Chichi designs.com</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
